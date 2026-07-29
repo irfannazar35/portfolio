@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irfan Nazar — Executive Engineer & Hydroinformatics Specialist</title>
+  <meta name="description" content="Portfolio of Irfan Nazar — Executive Engineer, Small Dams Division, Jhelum, Punjab Irrigation Department. Specialist in dam safety, flood early warning, GIS, and hydroinformatics.">
+  <meta name="keywords" content="Irfan Nazar, Executive Engineer, Hydroinformatics, Dam Safety, Punjab Irrigation Department, Jhelum, Small Dams, Flood Early Warning, GIS, HEC-RAS, IHE Delft">
+
+  <!-- CSS Design System Modules -->
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <!-- Technical Grid Texture Overlay -->
+  <div class="grid-bg-overlay" aria-hidden="true"></div>
+
+  <!-- STICKY TOPBAR NAVIGATION -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#top" class="brand-logo" aria-label="Irfan Nazar Home">
+        <div class="brand-icon">IN</div>
+        <div class="brand-text">
+          <span class="brand-name">IRFAN NAZAR</span>
+          <span class="brand-title">EXECUTIVE ENGINEER · HYDROINFORMATICS</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about">About</a></li>
+          <li><a href="public-alerts.html" style="color:#EF4444; font-weight:600;">🚨 Public Alerts</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#work">Selected Work</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggle" title="Toggle Light/Dark Blueprint Mode" aria-label="Toggle theme">☀️</button>
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- LIVE PUBLIC EMERGENCY ALERT BANNER -->
+  <div class="alert-ticker-banner">
+    <div class="alert-ticker-content">
+      <span style="background:#EF4444; color:#fff; padding:2px 8px; border-radius:4px; font-weight:700;">🚨 PUBLIC ALERT</span>
+      <span><strong>Tainpura I &amp; II, Domeli, Gurah Utam Singh:</strong> Reached normal pond level / max conservation level. Downstream residents stay watchful for Nullah flows.</span>
+    </div>
+    <a href="public-alerts.html" style="color:#FFFFFF; background:#EF4444; padding:4px 12px; border-radius:4px; font-weight:600; text-decoration:none; font-size:0.75rem; white-space:nowrap;">Read Public Advisory →</a>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-telemetry-badge">
+            <span class="status-dot"></span>
+            <span>16 SMALL DAMS MONITORED · POTOHAR ZONE</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering resilient <span class="highlight">water systems</span> &amp; hydroinformatics.
+          </h1>
+
+          <p class="hero-subtitle">
+            Executive Engineer with the Punjab Irrigation Department. Specialist in dam safety, flood early-warning systems, hydrological feasibility studies, and modern digital GIS tooling.
+          </p>
+
+          <div class="hero-credentials">
+            <span>MSc WATER SCIENCE &amp; ENGINEERING — HYDROINFORMATICS (IHE DELFT, NETHERLANDS)</span>
+            <span>BE CIVIL ENGINEERING (PAKISTAN)</span>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="#work" class="btn btn-primary">Explore Selected Work →</a>
+            <a href="#expertise" class="btn btn-secondary">Technical Arsenal</a>
+          </div>
+        </div>
+
+        <!-- Interactive Dam & Reservoir Schematic Canvas -->
+        <div class="hero-canvas-container">
+          <div class="canvas-header">
+            <span>REAL-TIME HYDRODYNAMIC RESERVOIR SIMULATOR</span>
+            <span class="font-mono" style="color:var(--accent-cyan);" id="waterReadout">75% FSL</span>
+          </div>
+
+          <canvas id="damCanvas" width="480" height="320"></canvas>
+
+          <div class="canvas-controls">
+            <span>RESERVOIR LEVEL:</span>
+            <input type="range" id="waterSlider" min="20" max="95" value="75" aria-label="Adjust Reservoir Water Level">
+            <span style="color:var(--accent-amber);">INTERACTIVE GAUGE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <div class="tech-titleblock">
+            <span>SHEET</span><span>01</span><span>SECTION</span><span>PROFILE</span>
+          </div>
+          <h2>Bridge between hydraulic engineering &amp; digital intelligence</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-profile-card">
+            <img src="assets/images/profile.png" alt="Irfan Nazar Executive Engineer" class="about-profile-img">
+            <div style="padding:16px; background:var(--bg-tertiary); border-top:1px solid var(--border-line); font-family:'JetBrains Mono', monospace; font-size:0.78rem; color:var(--text-muted);">
+              📍 Small Dams Division, Jhelum · Punjab Irrigation Dept
+            </div>
+          </div>
+
+          <div class="about-text">
+            <p>
+              I serve as Executive Engineer in the Small Dams Division, Jhelum, under the Punjab Irrigation Department. I oversee a portfolio of 16 small dams across the Potohar Zone — managing operation, dam safety assessments, rehabilitation, and flood emergency action plans.
+            </p>
+            <p>
+              My professional focus sits at the intersection of two critical fields: traditional civil &amp; hydraulic engineering (feasibility studies, dam safety inspections, EPAP review, PPRA procurement) and modern hydroinformatics (GIS spatial layers, Google Earth Engine analytics, interactive dashboards, and Python automation).
+            </p>
+
+            <div class="edu-timeline">
+              <div class="edu-card">
+                <div class="edu-degree">MSc</div>
+                <div>
+                  <h4 style="font-size:1.05rem;">Water Science &amp; Engineering — Hydroinformatics</h4>
+                  <p style="font-size:0.9rem; color:var(--text-muted); margin-top:2px;">IHE Delft Institute for Water Education, Delft, Netherlands</p>
+                </div>
+              </div>
+              <div class="edu-card">
+                <div class="edu-degree">BE</div>
+                <div>
+                  <h4 style="font-size:1.05rem;">Civil Engineering</h4>
+                  <p style="font-size:0.9rem; color:var(--text-muted); margin-top:2px;">Pakistan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    <!-- EXPERTISE & TECHNICAL ARSENAL -->
+    <section id="expertise" class="alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <div class="tech-titleblock">
+            <span>SHEET</span><span>03</span><span>SECTION</span><span>EXPERTISE</span>
+          </div>
+          <h2>Where hydraulic engineering &amp; digital tools meet</h2>
+          <p>Core engineering domains covering operations, risk modeling, spatial GIS, and automated tooling.</p>
+        </div>
+
+        <div class="expertise-grid">
+          <div class="expertise-card">
+            <div>
+              <div class="cat-tag">Dam &amp; Water Engineering</div>
+              <h4>Water Resources &amp; Dam Safety</h4>
+            </div>
+            <div class="chip-list">
+              <span class="chip">Reservoir operations</span>
+              <span class="chip">Dam safety assessment</span>
+              <span class="chip">EPAP review</span>
+              <span class="chip">Watershed management</span>
+              <span class="chip">Sediment control</span>
+            </div>
+          </div>
+
+          <div class="expertise-card">
+            <div>
+              <div class="cat-tag">Hydrology &amp; Forecasting</div>
+              <h4>Hydroinformatics</h4>
+            </div>
+            <div class="chip-list">
+              <span class="chip">Flood forecasting</span>
+              <span class="chip">Catchment modeling</span>
+              <span class="chip">Frequency analysis</span>
+              <span class="chip">Decision support systems</span>
+              <span class="chip">Climate adaptation</span>
+            </div>
+          </div>
+
+          <div class="expertise-card">
+            <div>
+              <div class="cat-tag">Spatial Analysis</div>
+              <h4>GIS &amp; Remote Sensing</h4>
+            </div>
+            <div class="chip-list">
+              <span class="chip">QGIS / ArcGIS</span>
+              <span class="chip">Google Earth Engine</span>
+              <span class="chip">Sentinel-1 SAR</span>
+              <span class="chip">DEM terrain analysis</span>
+              <span class="chip">Inundation mapping</span>
+            </div>
+          </div>
+
+          <div class="expertise-card">
+            <div>
+              <div class="cat-tag">Tooling &amp; Code</div>
+              <h4>Programming &amp; Automation</h4>
+            </div>
+            <div class="chip-list">
+              <span class="chip">Python</span>
+              <span class="chip">GeoPandas / rasterio</span>
+              <span class="chip">Google Apps Script</span>
+              <span class="chip">Dashboard design</span>
+              <span class="chip">Workflow scripts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK & CASE STUDIES -->
+    <section id="work">
+      <div class="container">
+        <div class="section-header">
+          <div class="tech-titleblock">
+            <span>SHEET</span><span>04</span><span>SECTION</span><span>SELECTED WORK</span>
+          </div>
+          <h2>Selected engineering projects &amp; systems</h2>
+          <p>Sample projects spanning dam safety, real-time flood warning, geospatial pipelines, and government TOR procurement.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="project-filter-bar" id="projectFilters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="hydroinformatics">Hydroinformatics &amp; DSS</button>
+          <button class="filter-btn" data-filter="damsafety">Dam Safety &amp; EPAP</button>
+          <button class="filter-btn" data-filter="gis">GIS &amp; Remote Sensing</button>
+          <button class="filter-btn" data-filter="procurement">Procurement &amp; TOR</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- NUMBERS BANNER STATS -->
+    <section class="alt-bg">
+      <div class="container">
+        <div class="stats-banner">
+          <div class="stat-item">
+            <div class="stat-num" data-target="16">16</div>
+            <div class="stat-label">Small Dams Managed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="13">13</div>
+            <div class="stat-label">ADP Schemes under TOR</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="10" data-suffix="+">10+</div>
+            <div class="stat-label">Major Infrastructure Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="100" data-suffix="+">100+</div>
+            <div class="stat-label">Technical Reports Authored</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOFTWARE & TOOLS ARSENAL -->
+    <section id="tools">
+      <div class="container">
+        <div class="section-header">
+          <div class="tech-titleblock">
+            <span>SHEET</span><span>05</span><span>SECTION</span><span>TOOLS</span>
+          </div>
+          <h2>Software &amp; technical arsenal</h2>
+        </div>
+
+        <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:36px;">
+          <div class="card">
+            <h4 style="font-family:'JetBrains Mono', monospace; font-size:0.82rem; color:var(--accent-amber); text-transform:uppercase; margin-bottom:16px;">Hydraulic Engineering</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:12px; font-size:0.95rem;">
+              <li style="border-bottom:1px solid var(--border-line); padding-bottom:8px;">HEC-RAS (1D/2D Hydrodynamics)</li>
+              <li style="border-bottom:1px solid var(--border-line); padding-bottom:8px;">MIKE SHE Integrated Hydrology</li>
+              <li style="border-bottom:1px solid var(--border-line); padding-bottom:8px;">AutoCAD Engineering Drafting</li>
+              <li style="padding-bottom:8px;">MS Project Schedule Management</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h4 style="font-family:'JetBrains Mono', monospace; font-size:0.82rem; color:var(--accent-amber); text-transform:uppercase; margin-bottom:16px;">GIS &amp; Remote Sensing</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:12px; font-size:0.95rem;">
+              <li style="border-bottom:1px solid var(--border-line); padding-bottom:8px;">QGIS Professional Desktop</li>
+              <li style="border-bottom:1px solid var(--border-line); padding-bottom:8px;">ArcGIS Spatial Analyst</li>
+              <li style="border-bottom:1px solid var(--border-line); padding-bottom:8px;">Google Earth Engine API</li>
+              <li style="padding-bottom:8px;">Digital Elevation Models (DEM)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h4 style="font-family:'JetBrains Mono', monospace; font-size:0.82rem; color:var(--accent-amber); text-transform:uppercase; margin-bottom:16px;">Data &amp; Programming</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:12px; font-size:0.95rem;">
+              <li style="border-bottom:1px solid var(--border-line); padding-bottom:8px;">Python — Pandas, GeoPandas, rasterio</li>
+              <li style="border-bottom:1px solid var(--border-line); padding-bottom:8px;">Google Apps Script &amp; Drive API</li>
+              <li style="border-bottom:1px solid var(--border-line); padding-bottom:8px;">Power BI Dashboards</li>
+              <li style="padding-bottom:8px;">GitHub &amp; VS Code Tooling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL REPORTING -->
+    <section class="alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <div class="tech-titleblock">
+            <span>SHEET</span><span>06</span><span>SECTION</span><span>REPORTS</span>
+          </div>
+          <h2>Technical reporting &amp; documentation</h2>
+          <p>Formal government reporting authored for inter-agency review and executive decision-making.</p>
+        </div>
+
+        <div class="reports-grid">
+          <div class="report-item"><span class="dot"></span>Small Dam Rehabilitation Studies</div>
+          <div class="report-item"><span class="dot"></span>Dam Safety &amp; Inquiry Reports</div>
+          <div class="report-item"><span class="dot"></span>Emergency Preparedness Action Plans</div>
+          <div class="report-item"><span class="dot"></span>Monsoon Flood Damage Assessment</div>
+          <div class="report-item"><span class="dot"></span>Hydrological Feasibility Studies</div>
+          <div class="report-item"><span class="dot"></span>Water Storage Planning Memos</div>
+          <div class="report-item"><span class="dot"></span>Procurement &amp; TOR Documentation</div>
+          <div class="report-item"><span class="dot"></span>Climate Adaptation Frameworks</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h2>Let's build smarter water infrastructure.</h2>
+            <p style="color:var(--text-muted); margin-top:14px;">
+              Open for technical consultations, dam safety reviews, hydrological studies, GIS spatial pipelines, and hydroinformatics decision support builds.
+            </p>
+
+            <div class="contact-field-list">
+              <div class="c-field">
+                <span class="key">NAME</span>
+                <span class="val">Irfan Nazar</span>
+              </div>
+              <div class="c-field">
+                <span class="key">ROLE</span>
+                <span class="val">Executive Engineer, Small Dams</span>
+              </div>
+              <div class="c-field">
+                <span class="key">DEPARTMENT</span>
+                <span class="val">Punjab Irrigation Dept</span>
+              </div>
+              <div class="c-field">
+                <span class="key">EMAIL</span>
+                <span class="val">
+                  irfannazar35@gmail.com
+                  <button id="copyEmailBtn" style="margin-left:6px; background:none; border:none; color:var(--accent-amber); cursor:pointer; font-family:inherit;">📋 Copy</button>
+                </span>
+              </div>
+              <div class="c-field">
+                <span class="key">GITHUB</span>
+                <span class="val"><a href="https://github.com/irfannazar35" target="_blank" rel="noopener" style="text-decoration:underline;">github.com/irfannazar35</a></span>
+              </div>
+              <div class="c-field">
+                <span class="key">LOCATION</span>
+                <span class="val">Jhelum, Punjab, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="card" style="padding:36px;">
+            <h3 style="font-size:1.35rem; margin-bottom:20px;">Send Executive Inquiry</h3>
+
+            <form class="contact-form" id="portfolioContactForm">
+              <div class="form-group">
+                <label for="contactName">Your Name</label>
+                <input type="text" id="contactName" placeholder="Engr. Alex Smith" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" placeholder="irfannazar35@gmail.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Inquiry Topic</label>
+                <select id="contactSubject">
+                  <option value="damsafety">Dam Safety &amp; EPAP Consulting</option>
+                  <option value="hydroinformatics">Hydroinformatics / DSS Tooling</option>
+                  <option value="gis">GIS Hydrological Pipeline</option>
+                  <option value="other">General Technical Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message / Project Brief</label>
+                <textarea id="contactMessage" rows="4" placeholder="Describe your project, consultation request, or question..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="justify-content:center; margin-top:8px;">Send Inquiry Message →</button>
+              <div id="formFeedback" style="font-family:'JetBrains Mono', monospace; font-size:0.8rem; margin-top:10px;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:var(--bg-primary); border-top:1px solid var(--border-line); padding:32px 0;">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; font-family:'JetBrains Mono', monospace; font-size:0.78rem; color:var(--text-subtle);">
+      <span>© 2026 IRFAN NAZAR · EXECUTIVE ENGINEER</span>
+      <span>SMALL DAMS DIVISION · JHELUM · PUNJAB IRRIGATION DEPT</span>
+    </div>
+  </footer>
+
+  <!-- PROJECT CASE STUDY MODAL -->
+  <div class="modal-overlay" id="projectModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      <div id="modalBodyContent"></div>
+    </div>
+  </div>
+
+  <!-- APPLICATION JAVASCRIPT MODULES -->
+  <script src="js/theme.js"></script>
+  <script src="js/dam-simulation.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

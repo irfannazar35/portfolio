@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public Advisory & Dam Water Level Alerts — Small Dams Division, Jhelum</title>
+  <meta name="description" content="Official public alerts and downstream water flow advisories for Small Dams Tainpura I, Tainpura II, Domeli, and Gurah Utam Singh. Executive Engineer Office, Jhelum.">
+
+  <!-- CSS Design System Modules -->
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <style>
+    .alert-hero-card {
+      background: rgba(239, 68, 68, 0.1);
+      border: 2px solid #EF4444;
+      border-radius: 16px;
+      padding: 36px;
+      margin-top: 32px;
+      position: relative;
+      box-shadow: 0 0 30px rgba(239, 68, 68, 0.2);
+    }
+    .alert-badge-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #EF4444;
+      color: #FFFFFF;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+    }
+    .alert-badge-live .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: #FFFFFF;
+      border-radius: 50%;
+      animation: pulseAlert 1.2s infinite;
+    }
+    @keyframes pulseAlert {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.8); }
+    }
+    .dam-chip-danger {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      color: #F87171;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Technical Grid Texture Overlay -->
+  <div class="grid-bg-overlay" aria-hidden="true"></div>
+
+  <!-- STICKY TOPBAR NAVIGATION -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand-logo" aria-label="Irfan Nazar Home">
+        <div class="brand-icon">IN</div>
+        <div class="brand-text">
+          <span class="brand-name">IRFAN NAZAR</span>
+          <span class="brand-title">EXECUTIVE ENGINEER · HYDROINFORMATICS</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="public-alerts.html" class="active" style="color:#EF4444; font-weight:700;">🚨 Public Alerts</a></li>
+          <li><a href="index.html#work">Selected Work</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggle" title="Toggle Theme" aria-label="Toggle theme">☀️</button>
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding: 64px 0 96px;">
+      <div class="container">
+        
+        <!-- Breadcrumb / Back Link -->
+        <a href="index.html" style="font-family:'JetBrains Mono', monospace; font-size:0.82rem; color:var(--accent-cyan); display:inline-flex; align-items:center; gap:6px; margin-bottom:24px;">
+          ← Return to Main Portfolio
+        </a>
+
+        <div class="section-header" style="margin-bottom: 24px;">
+          <div class="tech-titleblock">
+            <span>OFFICIAL BULLETIN</span><span>SMALL DAMS DIVISION</span><span>JHELUM</span>
+          </div>
+          <h1 style="font-size: clamp(2rem, 3.8vw, 3.2rem); font-weight:700;">Public Advisory &amp; Reservoir Alerts</h1>
+          <p>Official early-warning safety bulletins issued by the Executive Engineer Office, Small Dams Division Jhelum, Punjab Irrigation Department.</p>
+        </div>
+
+        <!-- HIGH EMERGENCY ALERT CARD -->
+        <div class="alert-hero-card">
+          <div class="alert-badge-live">
+            <span class="pulse-dot"></span>
+            HIGH LEVEL WATER ADVISORY · ACTIVE BULLETIN
+          </div>
+
+          <h2 style="font-size: clamp(1.5rem, 2.5vw, 2.2rem); color: var(--text-main); margin-bottom: 16px;">
+            Reservoirs Reached Maximum Conservation / Normal Pond Level
+          </h2>
+
+          <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom: 24px;">
+            <span class="dam-chip-danger">📍 Small Dam Tainpura I</span>
+            <span class="dam-chip-danger">📍 Small Dam Tainpura II</span>
+            <span class="dam-chip-danger">📍 Small Dam Domeli</span>
+            <span class="dam-chip-danger">📍 Small Dam Gurah Utam Singh</span>
+          </div>
+
+          <div style="background: var(--bg-card); border-left: 4px solid #EF4444; padding: 24px; border-radius: 8px; margin-bottom: 28px;">
+            <h3 style="font-size: 1.15rem; color: var(--accent-amber); margin-bottom: 10px; font-family:'JetBrains Mono', monospace;">
+              ⚠️ PUBLIC DOWNSTREAM ADVISORY
+            </h3>
+            <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-main);">
+              <strong>Small Dams Tainpura I, Tainpura II, Domeli, and Gurah Utam Singh</strong> have reached their normal pond level and maximum conservation levels.
+            </p>
+            <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-main); margin-top: 12px;">
+              People residing or traveling in the <strong>downstream area need to be watchful for any flows in the Nullahs</strong>. Please keep livestock away from stream beds and avoid crossing flooded channels.
+            </p>
+          </div>
+
+          <!-- Technical Emergency Details Table -->
+          <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; font-family:'JetBrains Mono', monospace; font-size:0.85rem;">
+            <div style="background:var(--bg-tertiary); padding:16px; border-radius:8px; border:1px solid var(--border-line);">
+              <div style="color:var(--text-subtle); margin-bottom:4px;">MONITORING STATUS</div>
+              <div style="color:var(--accent-amber); font-weight:700;">24/7 GAUGE TRACKING</div>
+            </div>
+            <div style="background:var(--bg-tertiary); padding:16px; border-radius:8px; border:1px solid var(--border-line);">
+              <div style="color:var(--text-subtle); margin-bottom:4px;">ISSUING AUTHORITY</div>
+              <div style="color:var(--accent-cyan); font-weight:700;">EXECUTIVE ENGINEER OFFICE</div>
+            </div>
+            <div style="background:var(--bg-tertiary); padding:16px; border-radius:8px; border:1px solid var(--border-line);">
+              <div style="color:var(--text-subtle); margin-bottom:4px;">OFFICIAL INQUIRY EMAIL</div>
+              <div style="color:var(--accent-emerald); font-weight:700;">irfannazar35@gmail.com</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SAFETY GUIDELINES SECTION -->
+        <div style="margin-top: 56px; display:grid; grid-template-columns: 1fr 1fr; gap:32px;">
+          <div class="card">
+            <h3 style="font-size:1.3rem; margin-bottom:16px; color:var(--accent-amber);">Downstream Safety Precaution Checklist</h3>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:14px; font-size:0.95rem; color:var(--text-muted);">
+              <li style="display:flex; gap:10px; align-items:start;">
+                <span style="color:#EF4444;">❌</span>
+                <span>Do not cross Nullah stream beds or low-lying spillway plunge pools during rainfall events.</span>
+              </li>
+              <li style="display:flex; gap:10px; align-items:start;">
+                <span style="color:#EF4444;">❌</span>
+                <span>Ensure cattle and farm animals are tethered away from natural drainage channels.</span>
+              </li>
+              <li style="display:flex; gap:10px; align-items:start;">
+                <span style="color:var(--accent-emerald);">✔</span>
+                <span>Report any abnormal seepage, erosion, or sudden discharge changes to local authorities.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 style="font-size:1.3rem; margin-bottom:16px; color:var(--accent-cyan);">Division Contact &amp; Reporting</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:20px;">
+              For official inquiries, dam safety technical coordination, or emergency updates, reach out directly to:
+            </p>
+            <div style="font-family:'JetBrains Mono', monospace; font-size:0.85rem; display:flex; flex-direction:column; gap:10px;">
+              <div><strong>OFFICER:</strong> Engr. Irfan Nazar</div>
+              <div><strong>ROLE:</strong> Executive Engineer, Small Dams Division</div>
+              <div><strong>JURISDICTION:</strong> Jhelum, Potohar Zone, Punjab</div>
+              <div><strong>EMAIL:</strong> <a href="mailto:irfannazar35@gmail.com" style="color:var(--accent-cyan); text-decoration:underline;">irfannazar35@gmail.com</a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer style="background:var(--bg-primary); border-top:1px solid var(--border-line); padding:32px 0;">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; font-family:'JetBrains Mono', monospace; font-size:0.78rem; color:var(--text-subtle);">
+      <span>© 2026 IRFAN NAZAR · EXECUTIVE ENGINEER</span>
+      <span>SMALL DAMS DIVISION · JHELUM · PUNJAB IRRIGATION DEPT</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

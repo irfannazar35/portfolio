@@ -1,0 +1,77 @@
+/* ==========================================================================
+   THEMES & DESIGN TOKENS SYSTEM
+   ========================================================================== */
+
+/* Hydro Midnight (Default Dark Mode) */
+:root, [data-theme="dark"] {
+  --bg-primary: #0A1118;
+  --bg-secondary: #121D28;
+  --bg-tertiary: #1A2837;
+  --bg-glass: rgba(18, 29, 40, 0.75);
+  --bg-card: rgba(26, 40, 55, 0.85);
+
+  --text-main: #E2E8F0;
+  --text-muted: #94A3B8;
+  --text-subtle: #64748B;
+  --text-brand: #00F2FE;
+
+  --accent-cyan: #00F2FE;
+  --accent-teal: #4FACFE;
+  --accent-amber: #FF9F43;
+  --accent-amber-glow: rgba(255, 159, 67, 0.25);
+  --accent-blue: #38BDF8;
+  --accent-emerald: #10B981;
+
+  --border-line: rgba(255, 255, 255, 0.12);
+  --border-active: rgba(0, 242, 254, 0.4);
+  --border-amber: rgba(255, 159, 67, 0.5);
+
+  --grid-line: rgba(56, 189, 248, 0.05);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 25px rgba(0, 242, 254, 0.15);
+
+  --canvas-water: rgba(0, 242, 254, 0.25);
+  --canvas-water-stroke: #00F2FE;
+  --canvas-dam: #334155;
+  --canvas-grid: rgba(255, 255, 255, 0.08);
+}
+
+/* Engineering Blueprint (Light Mode) */
+[data-theme="light"] {
+  --bg-primary: #F5F2EB;
+  --bg-secondary: #EBE5D8;
+  --bg-tertiary: #DFD7C4;
+  --bg-glass: rgba(245, 242, 235, 0.88);
+  --bg-card: #FFFFFF;
+
+  --text-main: #0F2537;
+  --text-muted: #4A5B6D;
+  --text-subtle: #718096;
+  --text-brand: #0F2537;
+
+  --accent-cyan: #0284C7;
+  --accent-teal: #0D9488;
+  --accent-amber: #D97724;
+  --accent-amber-glow: rgba(217, 119, 36, 0.2);
+  --accent-blue: #2563EB;
+  --accent-emerald: #059669;
+
+  --border-line: #D4CEBC;
+  --border-active: #0284C7;
+  --border-amber: #D97724;
+
+  --grid-line: rgba(15, 37, 55, 0.05);
+
+  --shadow-sm: 0 2px 6px rgba(15, 37, 55, 0.06);
+  --shadow-md: 0 6px 18px rgba(15, 37, 55, 0.1);
+  --shadow-lg: 0 12px 32px rgba(15, 37, 55, 0.15);
+  --shadow-glow: 0 0 20px rgba(2, 132, 199, 0.15);
+
+  --canvas-water: rgba(2, 132, 199, 0.25);
+  --canvas-water-stroke: #0284C7;
+  --canvas-dam: #1E293B;
+  --canvas-grid: rgba(15, 37, 55, 0.1);
+}
